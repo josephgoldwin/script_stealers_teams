@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna University - Admission Feedback</title>
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../anna-university/anna_university.css">
+  <link rel="stylesheet" href="feedback.css">
+
+</head>
+<body>
+
+<header>
+  <div class="index">
+    <div class="logo"><img src="../img/favicon-32x32.png" alt="logo"></div>
+    <h1>Admission Feedback</h1>
+    <div class="logo">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../anna-university/anna_university.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="anna-university/register.html">Register</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="admission">
+  <h2>Admission Feedback Form</h2>
+  <form action="#" method="post">
+
+    
+    <div class="form-group">
+      <label for="studentName">Your Name</label>
+      <input type="text" id="studentName" placeholder="Enter your name" required autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="studentEmail">Your Email</label>
+      <input type="email" id="studentEmail" placeholder="Enter your email" required autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="collegeName">College Name</label>
+        <input type="text" id="collegeName" placeholder="Enter your college name" required autocomplete="off">
+      </div>
+    
+    <div class="form-group">
+      <label>Admission Process</label>
+      <div class="stars">
+        <input type="radio" id="process5" name="process" value="5"><label for="process5">★</label>
+        <input type="radio" id="process4" name="process" value="4"><label for="process4">★</label>
+        <input type="radio" id="process3" name="process" value="3"><label for="process3">★</label>
+        <input type="radio" id="process2" name="process" value="2"><label for="process2">★</label>
+        <input type="radio" id="process1" name="process" value="1"><label for="process1">★</label>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label>Staff Helpfulness</label>
+      <input type="range" id="helpfulness" min="0" max="10" step="1" value="8">
+      <div class="range-value">Value: <span id="helpfulnessValue">8</span></div>
+    </div>
+
+   
+    <div class="form-group">
+      <label>Clarity of Admission Guidelines</label>
+      <div class="stars">
+        <input type="radio" id="clarity5" name="clarity" value="5"><label for="clarity5">★</label>
+        <input type="radio" id="clarity4" name="clarity" value="4"><label for="clarity4">★</label>
+        <input type="radio" id="clarity3" name="clarity" value="3"><label for="clarity3">★</label>
+        <input type="radio" id="clarity2" name="clarity" value="2"><label for="clarity2">★</label>
+        <input type="radio" id="clarity1" name="clarity" value="1"><label for="clarity1">★</label>
+      </div>
+    </div>
+
+    
+
+  
+    <div class="form-group">
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" placeholder="Write your suggestions..."></textarea>
+    </div>
+
+    <button type="submit" class="btn">Submit Feedback</button>
+  </form>
+</div>
+
+<footer id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Anna University | Student Feedback Portal</p>
+    <address>
+      <strong>Anna University</strong><br>
+      Sardar Patel Road, Guindy,<br>
+      Chennai, Tamil Nadu 600025, India<br>
+      Phone: +91-44-2235 7004<br>
+      Email: <a href="mailto:info@annauniv.edu">info@annauniv.edu</a>
+    </address>
+    <button class="back-to-top"><a href="#admission"> ↑ Top</a></button>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna University - Overall Campus Atmosphere Feedback</title>
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../anna-university/anna_university.css">
+  <link rel="stylesheet" href="feedback.css">
+
+</head>
+<body>
+
+<header>
+  <div class="index">
+    <div class="logo"><img src="../img/favicon-32x32.png" alt="logo"></div>
+    <h1>Overall Campus Atmosphere</h1>
+    <div class="logo">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../anna-university/anna_university.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="anna-university/register.html">Register</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="campus">
+  <h2>Overall Campus Atmosphere Feedback</h2>
+  <form action="#" method="post">
+
+    
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required autocomplete="off">
+    </div>
+
+   
+    <div class="form-group">
+      <label>Cleanliness</label>
+      <select name="cleanliness" id="">
+        <option value="">Select Rating</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+    </div>
+
+
+    <div class="form-group">
+      <label>Facilities</label>
+      <div class="stars">
+        <input type="radio" id="fac5" name="facilities" value="5"><label for="fac5">★</label>
+        <input type="radio" id="fac4" name="facilities" value="4"><label for="fac4">★</label>
+        <input type="radio" id="fac3" name="facilities" value="3"><label for="fac3">★</label>
+        <input type="radio" id="fac2" name="facilities" value="2"><label for="fac2">★</label>
+        <input type="radio" id="fac1" name="facilities" value="1"><label for="fac1">★</label>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label>Overall Satisfaction (0-10)</label>
+      <input type="range" id="overall" min="0" max="100" step="1" value="90">
+      <div class="range-value">Value: <span id="rangeValue">90</span></div>
+    </div>
+
+    
+    <button type="submit" class="btn">Submit Feedback</button>
+
+  </form>
+</div>
+
+<footer id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Anna University | Student Feedback Portal</p>
+    <address>
+      <strong>Anna University</strong><br>
+      Sardar Patel Road, Guindy,<br>
+      Chennai, Tamil Nadu 600025, India<br>
+      Phone: +91-44-2235 7004<br>
+      Email: <a href="mailto:info@annauniv.edu">info@annauniv.edu</a>
+    </address>
+    <button class="back-to-top"><a href="#campus"> ↑ Top</a></button>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna University - Safety & Security Feedback</title>
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../anna-university/anna_university.css">
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<header>
+  <div class="index">
+    <div class="logo"><img src="../img/favicon-32x32.png" alt="logo"></div>
+    <h1>Safety & Security</h1>
+    <div class="logo">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../anna-university/anna_university.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="anna-university/register.html">Register</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="safety">
+  <h2>Safety & Security Feedback</h2>
+  <form action="#" method="post">
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required autocomplete="off">
+    </div>
+
+    <div class="form-group">
+      <label for="cctv">CCTV Coverage</label>
+      <div class="stars">
+        <input type="radio" id="cctv5" name="cctv" value="5"><label for="cctv5">★</label>
+        <input type="radio" id="cctv4" name="cctv" value="4"><label for="cctv4">★</label>
+        <input type="radio" id="cctv3" name="cctv" value="3"><label for="cctv3">★</label>
+        <input type="radio" id="cctv2" name="cctv" value="2"><label for="cctv2">★</label>
+        <input type="radio" id="cctv1" name="cctv" value="1"><label for="cctv1">★</label>
+      </div>
+    </div>
+
+ 
+    <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+      <label for="lighting">Lighting</label>
+     <input type="radio" id="lighting" name="lighting">Very Bright
+     <input type="radio" id="lighting1" name="lighting">Bright
+     
+     <input type="radio" id="lighting3" name="lighting">Dim
+     <input type="radio" id="lighting4" name="lighting">Very Dim
+    </div>
+
+    
+    <div class="form-group">
+      <label for="watchman">Watchman Presence</label>
+      <div class="stars">
+        <select name="watchman" id="">
+          <option value="">Select Rating</option>
+          <option>Excellent</option>
+          <option>Good</option>
+          <option>Average</option>
+          <option>Poor</option>
+        </select>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label for="emergency">Emergency Response</label>
+      <div class="stars">
+        <input type="radio" id="emergency5" name="emergency" value="5"><label for="emergency5">★</label>
+        <input type="radio" id="emergency4" name="emergency" value="4"><label for="emergency4">★</label>
+        <input type="radio" id="emergency3" name="emergency" value="3"><label for="emergency3">★</label>
+        <input type="radio" id="emergency2" name="emergency" value="2"><label for="emergency2">★</label>
+        <input type="radio" id="emergency1" name="emergency" value="1"><label for="emergency1">★</label>
+      </div>
+    </div>
+
+ 
+    <div class="form-group">
+      <label for="overall">Overall Satisfaction (0-10)</label>
+      <input type="range" id="overall" min="0" max="10" step="1" value="4">
+      <div class="range-value">Value: <span id="rangeValue">5</span></div>
+    </div>
+
+ 
+    <div class="form-group">
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" placeholder="Write your suggestions..."></textarea>
+    </div>
+
+    <button type="submit" class="btn">Submit Feedback</button>
+  </form>
+</div>
+
+<footer id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Anna University | Student Feedback Portal</p>
+    <address>
+      <strong>Anna University</strong><br>
+      Sardar Patel Road, Guindy,<br>
+      Chennai, Tamil Nadu 600025, India<br>
+      Phone: +91-44-2235 7004<br>
+      Email: <a href="mailto:info@annauniv.edu">info@annauniv.edu</a>
+    </address>
+    <button class="back-to-top"><a href="#safety"> ↑ Top</a></button>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

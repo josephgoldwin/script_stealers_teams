@@ -1,0 +1,259 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #800000, #d35400, #f5f5f5);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+  
+    header {
+      width: 100%;
+      background: #800000;
+      color: white;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 35px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 18px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+    .container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      width: 480px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      margin: 200px auto;
+    
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #800000;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-group select,
+    .form-group textarea,
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #800000;
+      box-shadow: 0 0 6px rgba(128,0,0,0.4);
+    }
+
+  
+    .stars {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+
+    .stars input {
+      display: none;
+    }
+
+    .stars label {
+      font-size: 28px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;
+    }
+
+    
+    .range-value {
+      font-weight: bold;
+      color: #800000;
+      margin-top: 6px;
+      text-align: right;
+    }
+
+    
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #800000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #5a0000;
+    }
+
+   
+    footer {
+      margin-top: auto;
+      background: #800000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      
+      margin: 0 8px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .index{
+      background-color: #800000;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+    .logo img{
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    .index h1{
+      font-size: 25px;
+      margin-left: 230px;
+      padding: 0;
+      font-weight: bold;
+    }
+    
+
+   .btn {
+      width: 49%;
+      padding: 12px;
+      background: #800000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background: #5a0000;
+    }
+
+    .login-link {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .login-link a {
+      color: #800000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #800000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  
+   
+.radio-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group label {
+  padding: 8px 16px;
+  border: 1px solid #800000;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: white;
+  color: #800000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  background-color: #800000;
+  color: white;
+  border-color: #5a0000;
+}
+

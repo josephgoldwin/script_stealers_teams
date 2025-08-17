@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna University - Wi-Fi Feedback</title>
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../anna-university/anna_university.css">
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<header>
+  <div class="index">
+    <div class="logo"><img src="../img/favicon-32x32.png" alt="logo"></div>
+    <h1>Wi-Fi & Internet Connectivity</h1>
+    <div class="logo">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../anna-university/anna_university.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="anna-university/register.html">Register</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="wifi">
+  <h2>Wi-Fi & Internet Feedback</h2>
+  <form action="#" method="post">
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required autocomplete="off">
+    </div>
+
+
+    <div class="form-group">
+      <label for="speed">Internet Speed</label>
+      <select name="speed" id="">
+        <option value="">Select Rating</option>
+        <option>100%</option>
+        <option>75%</option>
+        <option>50%</option>
+        <option>25%</option>
+        <option>5%</option>
+        <option>0%</option>
+      </select>
+    </div>
+
+    
+    <div class="form-group">
+      <label for="coverage">Coverage</label>
+      <div class="stars">
+        <input type="radio" id="coverage5" name="coverage" value="5"><label for="coverage5">★</label>
+        <input type="radio" id="coverage4" name="coverage" value="4"><label for="coverage4">★</label>
+        <input type="radio" id="coverage3" name="coverage" value="3"><label for="coverage3">★</label>
+        <input type="radio" id="coverage2" name="coverage" value="2"><label for="coverage2">★</label>
+        <input type="radio" id="coverage1" name="coverage" value="1"><label for="coverage1">★</label>
+      </div>
+    </div>
+
+   
+    <div class="form-group">
+      <label for="reliability">Reliability</label>
+      <select name="reliability" id="">
+        <option value="">Select Rating</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+    </div>
+
+    
+    <div class="form-group">
+      <label for="overall">Overall Satisfaction (0-10)</label>
+      <input type="range" id="overall" min="0" max="10" step="1" value="5">
+      <div class="range-value">Value: <span id="rangeValue">5</span></div>
+    </div>
+
+    
+    <div class="form-group">
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" placeholder="Write your suggestions..."></textarea>
+    </div>
+
+    <button type="submit" class="btn">Submit Feedback</button>
+  </form>
+</div>
+
+<footer id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Anna University | Student Feedback Portal</p>
+    <address>
+      <strong>Anna University</strong><br>
+      Sardar Patel Road, Guindy,<br>
+      Chennai, Tamil Nadu 600025, India<br>
+      Phone: +91-44-2235 7004<br>
+      Email: <a href="mailto:info@annauniv.edu">info@annauniv.edu</a>
+    </address>
+    <button class="back-to-top"><a href="#wifi"> ↑ Top</a></button>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

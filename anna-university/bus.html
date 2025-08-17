@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna University - Bus Feedback</title>
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../anna-university/anna_university.css">
+  <link rel="stylesheet" href="feedback.css">
+  
+</head>
+<body>
+
+<header>
+  <div class="index">
+    <div class="logo"><img src="../img/favicon-32x32.png" alt="logo"></div>
+    <h1>College Bus</h1>
+    <div class="logo">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../anna-university/anna_university.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="anna-university/register.html">Register</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="bus">
+  <h2>College Bus Feedback</h2>
+  <form action="#" method="post">
+
+    
+    <div class="form-group">
+      <label for="busNo">Bus Number</label>
+      <input type="text" id="busNo" placeholder="Enter Bus Number" required autocomplete="off">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="driverName">Driver Name</label>
+      <input type="text" id="driverName" placeholder="Enter Driver Name" required autocomplete="off">
+    </div>
+
+
+    <div class="form-group">
+      <label>Cleanliness</label>
+      <div class="stars">
+        <input type="radio" id="clean5" name="cleanliness" value="5"><label for="clean5">★</label>
+        <input type="radio" id="clean4" name="cleanliness" value="4"><label for="clean4">★</label>
+        <input type="radio" id="clean3" name="cleanliness" value="3"><label for="clean3">★</label>
+        <input type="radio" id="clean2" name="cleanliness" value="2"><label for="clean2">★</label>
+        <input type="radio" id="clean1" name="cleanliness" value="1"><label for="clean1">★</label>
+      </div>
+    </div>
+
+  
+    <div class="form-group">
+      <label>Punctuality</label>
+      <select name="punctuality" id="">
+        <option value="">Select Rating</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+    </div>
+
+    
+    <div class="form-group">
+      <label>Driver Behavior</label>
+      <div class="stars">
+        <input type="radio" id="driver5" name="driverBehavior" value="5"><label for="driver5">★</label>
+        <input type="radio" id="driver4" name="driverBehavior" value="4"><label for="driver4">★</label>
+        <input type="radio" id="driver3" name="driverBehavior" value="3"><label for="driver3">★</label>
+        <input type="radio" id="driver2" name="driverBehavior" value="2"><label for="driver2">★</label>
+        <input type="radio" id="driver1" name="driverBehavior" value="1"><label for="driver1">★</label>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label>Currect Time Rating (0-100)</label>
+      <input type="range" id="overall" min="0" max="100" step="1" value="50" required>
+      <div class="range-value">Value: <span id="rangeValue">50</span></div>
+    </div>
+
+    <button type="submit" class="btn">Submit Feedback</button>
+
+  </form>
+</div>
+
+<footer id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Anna University | Student Feedback Portal</p>
+    <address>
+      <strong>Anna University</strong><br>
+      Sardar Patel Road, Guindy,<br>
+      Chennai, Tamil Nadu 600025, India<br>
+      Phone: +91-44-2235 7004<br>
+      Email: <a href="mailto:info@annauniv.edu">info@annauniv.edu</a>
+    </address>
+    <button class="back-to-top"><a href="#bus"> ↑ Top</a></button>
+  </div>
+</footer>
+
+</body>
+</html>

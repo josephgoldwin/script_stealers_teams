@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anna University - Feedback Poster</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+  <style>
+   
+    *{
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #222;
+    }
+
+    header {
+      background: brown;
+      color: #fff;
+      padding: 14px 12px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background: brown;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      z-index: 1;
+
+    }
+    header h1 { 
+      margin: 0; 
+      font-size: 22px; 
+      text-shadow: 10px 10px 6px rgba(11, 5, 5, 0.916);
+    }
+    nav {
+      margin-top: 8px;
+      display:flex;
+      justify-content:center;
+      gap: 18px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    nav a:hover{ text-decoration: underline; }
+
+    main {
+      display: grid;
+      grid-template-columns: 220px 1fr 220px;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      min-height: calc(100vh - 86px);
+      margin-top: 80px;
+    }
+
+    aside, section, article {
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.12);
+    }
+
+    aside ul li{
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    aside h2, section h2, article h2 {
+      margin-top: 0;
+      color: brown;
+    }
+
+aside img, article img {
+  margin-top: 20px;
+}
+    
+    aside ul {
+       list-style: none; 
+       padding: 0;
+        margin: 0; 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    aside li {
+       margin: 8px 0;
+       }
+    aside a {
+      text-decoration: none;
+      color: brown;
+      font-weight: bold;
+    }
+    aside a:hover {
+       color: #000;
+       text-decoration: underline;
+       background-color:cadetblue;
+       
+      }
+
+    article ul { 
+      margin: 12px 0; 
+    }
+    article li ,article p, article dd {
+      
+    
+      margin: 10px 0;
+      line-height: 2;
+     }
+     
+     
+   
+    .poster {
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      gap: 20px;
+    }
+
+    .poster-card {
+      background: antiquewhite;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      text-align: center;
+      position: relative;
+    }
+
+    .poster-card .feedback {
+      margin: 0 0 12px;
+      padding: 10px 14px;
+      color: #fff;
+      background: brown;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+
+    .poster-card .feedback h2 {
+      margin: 0;
+      font-size: 18px;
+      color:white
+    }
+
+    .poster-card img {
+      width: 100%;
+      max-width: 1000px;
+      height: 400px;
+      border: 2px solid brown;
+      border-radius: 10px;
+      display: block;
+      margin: auto;
+    }
+
+    .icon-bar {
+      position: relative;
+      left: 18px;
+      bottom: -10px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .icon-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      background: rgba(116, 7, 7, 0.9);
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      border: none;
+      cursor: pointer;
+      transition: transform .15s ease, background .15s ease;
+      font-size: 18px;
+      color: #fff;
+    }
+    .icon-btn:hover {
+      transform: translateY(-3px);
+      background:black;
+      color: brown;
+    }
+
+    
+    .icon-save {
+      position: absolute;
+      right: 18px;
+      bottom: 0px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    
+    .index{
+      background-color: #800000;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo img{
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    footer {
+      background: #800000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+
+<body>
+
+  
+  <header>
+    <div class="index">
+    <div class="logo"><img src="../img/favicon-32x32.png" alt="logo"></div>
+    <h1>Anna University - Student Feedback Portal</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../anna-university/anna_university.html">About</a>
+      <a href="anna-university/feedback.html">Feedback</a>
+      <a href="anna-university/contact.html">Contact Us</a>
+      <a href="anna-university/register.html">Register</a>
+    </nav>
+    </div>
+  </header>
+
+
+
+  <main>
+    <aside>
+      <h2 style="margin-top: 30px; background-color: gray">Feedback Links</h2>
+      <img src="img/annauniversity.jpg" alt="annauniversity" width="100%"><br><br>
+      <ul>
+        <li><a href="anna-university/admission.html">Admission</a></li>
+        <li><a href="anna-university/Classroom.html">Classroom Quality & Comfort</a></li>
+        <li><a href="anna-university/Laboratory.html">Laboratories Facilities</a></li>
+        <li><a href="anna-university/Library.html">Library Resources</a></li>
+        <li><a href="anna-university/Cleanliness.html">Campus Cleanliness & Hygiene</a></li>
+        <li><a href="anna-university/Hostel.html">Hostel / Accommodation</a></li> 
+        <li><a href="anna-university/Canteen.html">Canteen & Food Services</a></li>
+        <li><a href="anna-university/Hostel.html">Sports & Recreation Facilities</a></li>
+        <li><a href="anna-university/wifi.html">Wi-fi & Internet</a></li>
+        <li><a href="anna-university/Security.html">Security & Safety</a></li>
+        <li><a href="anna-university/Events.html">Events & Cultural Activities</a></li>
+        <li><a href="anna-university/Placement.html">Placement & Career Support</a></li>
+        <li><a href="anna-university/staff.html">College Staffs</a></li>
+        <li><a href="anna-university/bus.html">College Bus</a></li>
+        <li><a href="anna-university/Overall_Campus.html">Overall Campus Atmosphere</a></li>
+      
+      </ul>
+    </aside>
+
+    <section class="poster" aria-label="Anna University poster and interaction area">
+      <div class="container">
+
+          <div class="poster-card">
+          <div class="feedback">
+            <h2>ADMISSION FEEDBACK</h2>
+          </div>
+          <img src="img/admission.webp" alt="admission feedback">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+      </div>
+        <div class="poster-card">
+          <div class="feedback">
+            <h2>CLASSROOM QUALITY & COMFORT FEEDBACK</h2>
+          </div>
+          <img src="img/Classroom_feedback.jpg" alt="Classroom Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+
+       
+        <div class="poster-card">
+          <div class="feedback">
+            <h2>LABORATORY FACILITIES FEEDBACK</h2>
+          </div>
+          <img src="img/LABORATORY.webp" alt="Laboratory Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+
+           <div class="poster-card">
+          <div class="feedback">
+            <h2>LIBRARY RESOURCES FEEDBACK</h2>
+          </div>
+          <img src="img/LibraryResources.jpeg" alt="Library Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+
+          <div class="poster-card">
+          <div class="feedback">
+            <h2>CAMPUS CLEANLINESS & HYGIENE FEEDBACK</h2>
+          </div>
+          <img src="img/Campus.png" alt="Campus Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+
+           <div class="poster-card">
+          <div class="feedback">
+            <h2>HOSTEL / ACCOMMODATION FEEDBACK</h2>
+          </div>
+          <img src="img/hostel.jpg" alt="Hostel Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+          <div class="poster-card">
+          <div class="feedback">
+            <h2>CANTEEN & FOOD SERVICES FEEDBACK</h2>
+          </div>
+          <img src="img/Canteen.jpg" alt="Canteen Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+   <div class="poster-card">
+          <div class="feedback">
+            <h2>SPORTS & RECREATION FACILITIES FEEDBACK</h2>
+          </div>
+          <img src="img/sports.jpg" alt="Sports Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+
+        <div class="poster-card">
+          <div class="feedback">
+            <h2>WI-FI & INTERNET FEEDBACK</h2>
+          </div>
+          <img src="img/wifi.webp" alt="Wifi Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+
+        <div class="poster-card">
+          <div class="feedback">
+            <h2>SAFETY & SECURITY FEEDBACK</h2>
+          </div>
+          <img src="img/safety.avif" alt="Safety Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+         <div class="poster-card">
+          <div class="feedback">
+            <h2>EVENTS & CULTURAL ACTIVITIES FEEDBACK</h2>
+          </div>
+          <img src="img/event.jpg" alt="events Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+         <div class="poster-card">
+          <div class="feedback">
+            <h2>PLACEMENT & CAREER SUPPORT FEEDBACK</h2>
+          </div>
+          <img src="img/placement.jpg" alt="Placement Feedback Poster">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </div>
+        <div class="poster-card">
+          <div class="feedback">
+            <h2>STAFFS FEEDBACK</h2>
+          </div>
+          <img src="img/staff.jfif" alt="staff feedback">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+      </div>
+       <div class="poster-card">
+          <div class="feedback">
+            <h2>BUS FEEDBACK</h2>
+          </div>
+          <img src="img/bus.jpg" alt="bus feedback">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+          </div>
+      
+        <div class="poster-card">
+          <div class="feedback">
+            <h2>OVERALL CAMPUS ATMOSPHERE FEEDBACK</h2>
+          </div>
+          <img src="img/overall.jpeg" alt="overall feedback">
+          <div class="icon-bar">
+            <button class="icon-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" aria-label="Comment"><i class="fa-solid fa-comment"></i></button>
+            <button class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="icon-btn" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="icon-save">
+            <button class="icon-btn" aria-label="Save"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <article>
+      <h2 style="margin-top: 30px; background-color:gray; text-align: center;">Notice</h2>
+      <img src="img/university.jpeg" alt="university" width="100%" height="2%">
+      <p>Students are requested to share their valuable feedback regarding:</p>
+      <ul>
+        <li>Classroom Quality & Comfort</li>
+        <li>Laboratory Facilities</li>
+        <li>Library Resources</li>
+        <li>Campus Cleanliness</li>
+        <li>Hostel & Accommodation</li>
+        <li>Canteen & Food Services</li>
+        <li>Sports & Recreation</li>
+        <li>Wi-Fi & Internet</li>
+        <li>Safety & Security</li>
+        <li>Overall Campus Atmosphere</li>
+        <li>Staffs</li>
+        <li>Bus Services</li>
+        <li>Other Facilities</li>
+
+      </ul>
+      <p style="text-align: center;"><b><mark>Please Your Feedback Form Fill</mark></b></p>
+      <img src="img/feedback.png" alt="feedback" width="100%">
+      <p>Your suggestions will help us improve Anna University’s facilities and academic environment.</p>
+      <p><b><mark>Positive Feedback:</mark></b></p>
+      <dl>
+        <dt><b>Placements:</b></dt>
+        <dd>Many companies visit the campus for placements, and the placement rate is reported to be high.</dd>
+      </dl>
+      <dl>
+        <dt><b>Infrastructure:</b></dt>
+        <dd>The university is praised for its excellent infrastructure and facilities.</dd>
+      </dl>
+      <dl>
+        <dt><b>Facilities:</b></dt>
+        <dd>The faculty is generally considered experienced and qualified.</dd>
+      </dl>
+      <dl>
+        <dt><b>Course Material:</b></dt>
+        <dd>The course material is considered up-to-date and relevant for employment.</dd>
+        </dl>
+        <dl>
+          <dt><b>Campus Life:</b></dt>
+          <dd>Students appreciate the greenery, sports facilities, and the overall eco-friendly environment.</dd>
+        </dl>
+        <dl>
+          <dt>Value for Money: </dt>
+          <dd>Some students feel their investment in the university is worthwhile due to the quality of education and internship opportunities. </dd>
+        </dl>
+        <hr>
+      <p><b><mark>Negative Feedback:</mark></b></p>
+      <dl>
+        <dt><b>Competition:</b></dt>
+        <dd>Admission to popular programs can be highly competitive, according to some reviews. </dd>
+        </dl>
+      <dl>
+        <dt><b>Government School Students:</b></dt>
+        <dd>Some reports indicate that a small percentage of students admitted to Anna University campuses are from government schools. </dd>
+        </dl>
+      <hr>
+      <p><b><mark>Overall Feedback:</mark></b></p>
+      <iframe width="100%" height="2%" src="https://www.youtube.com/embed/TOCIuIrw7y0?si=R6CCPELszGM1-MqX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <ul style="list-style:none; padding:0;">
+  <li><i class="fa-solid fa-user-graduate"></i> Students Feedback</li>
+  <li><i class="fa-solid fa-chalkboard-teacher"></i> Teachers Feedback</li>
+  <li><i class="fa-solid fa-people-group"></i> Alumni Feedback</li>
+  <li><i class="fa-solid fa-briefcase"></i> Employer Feedback</li>
+  <li><i class="fa-solid fa-user"></i> Parents Feedback</li>
+  <li><i class="fa-solid fa-users-gear"></i> Staff Feedback</li>
+</ul>
+<hr>
+
+      <p><b><mark>Feedback Students:</mark></b></p>
+      <img src="img/students.png" alt="students" width="100%" height="1.5%">
+      <p>Students have consistently lauded Anna University for its comprehensive curriculum, industry exposure, and supportive learning environment. The emphasis on practical knowledge and skill development ensures that graduates are well-prepared for the challenges of the professional world.</p>
+      <hr>
+
+      <p><b><mark>Results Feedbacks:</mark></b></p>
+      <img src="img/result.jpg" alt="result" width="100%">
+      <dl>
+        <dt>Website Load and Access</dt>
+        <dd>Slow, often crashes during result release due to high load.</dd>
+        
+      </dl>
+      <dl>
+        <dt>Revaluation Process</dt>
+        <dd>Seen as unreliable; fees paid may not be refunded even when grades change.</dd>
+      </dl>
+      <dl>
+        <dt>Result Declaration Process</dt>
+        <dd>Platforms like COE1 are used to publish regular, internal, and revaluation results.</dd>
+      </dl>
+      <dl>
+        <dt>Student Examination Anxiety</dt>
+        <dd>Concerns about evaluation strictness, presentation, and fairness.</dd>
+      </dl>
+      <hr>
+    
+      <p><b><mark>Webinar Feedback:</mark></b></p>
+      <img src="img/webinar.jpeg" alt="webinar" width="100%">
+      <dl>
+        <dt>Webinars Conducted:</dt>
+        <dd>Multiple in early 2021 covering ICT, mentoring, research impact, OBE, etc.</dd>
+      </dl>
+      <dl>
+        <dt>Feedback System</dt>
+        <dd>IQAC conducts broad feedback via online forms (students, teachers, alumni, etc.) </dd>
+      </dl>
+      <dl>
+        <dt>Webinar Feedback Public?</dt>
+        <dd>No publicly available student feedback specific to webinars</dd>
+      </dl>
+      <hr>
+     
+      
+      <p><b><mark>Positive & Negative Feedback:</mark></b></p>
+      <img src="img/positive.png" alt="feedback" width="100%" height="3%">
+      <hr>
+      <p><b><mark>Feedback Network:</mark></b></p>
+      <img src="img/feedback_network.jpg" alt="feedback" width="100%" height="3%">
+<hr>
+<p><b><mark>Summary:</mark></b></p>
+<p>Student feedback on Anna University's result-related processes indicates persistent frustrations. The university’s result portal frequently becomes sluggish or unresponsive during peak result periods, causing delays and anxiety. The revaluation system, despite being an opportunity for appeal, is criticized for its inconsistent outcomes and failure to refund fees even when grade changes occur. Additionally, students report high pressure regarding answer presentation and worry over stringent or opaque evaluation practices.</p>
+<hr>
+<img src="img/types.webp" alt="types" width="100%" height="3%">
+<hr>
+      <p><b><mark>Conclusion:</mark></b></p>
+      <p>Anna University remains a top choice for aspiring engineers and technologists, offering a blend of tradition, innovation, and excellence. Its legacy, combined with modern educational practices, ensures that students receive a holistic and future-ready education.</p>
+    </article>
+  </main>
+
+  <footer id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Anna University | Student Feedback Portal</p>
+
+    <address>
+      <strong>Anna University</strong><br>
+      Sardar Patel Road, Guindy,<br>
+      Chennai, Tamil Nadu 600025, India<br>
+      Phone: +91-44-2235 7004<br>
+      Email: <a href="mailto:info@annauniv.edu">info@annauniv.edu</a>
+    </address>
+
+    <button class="back-to-top"><a href="#login"> ↑ Top</a>
+     
+    </button>
+  </div>
+</footer>
+
+</body>
+</html>
